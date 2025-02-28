@@ -240,13 +240,13 @@ button:hover {
   animation: fadeIn 2s ease-in-out;
 }
 
-.hero-image {
-  margin-top: 20px; /* Space below the subtitle */
-  max-width: 300px; /* Adjust image size */
-  height: auto; /* Maintain aspect ratio */
-  border-radius: 10px; /* Optional: Add rounded corners */
-  animation: fadeIn 2.5s ease-in-out;
-}
+/* .hero-image { */
+  /* margin-top: 20px; Space below the subtitle */
+  /* max-width: 300px; Adjust image size */
+  /* height: auto; Maintain aspect ratio */
+  /* border-radius: 10px; Optional: Add rounded corners */
+  /* animation: fadeIn 2.5s ease-in-out; */
+/* } */
 
 .btn {
   padding: 10px 25px; /* Adjust button padding */
@@ -258,13 +258,6 @@ button:hover {
   margin-top: 20px; /* Space below the image */
 }
 
-/* Container for image and button */
-.hero-image-button-container {
-  display: flex;
-  flex-direction: column; /* Stack image and button vertically */
-  align-items: center; /* Center items horizontally */
-  margin-top: 20px; /* Space below the subtitle */
-}
 
 .btn-primary {
   background-color: var(--primary-color);
@@ -302,6 +295,7 @@ button:hover {
 /* Horizontal line styling */
 .section-divider {
   position: relative; /* Required for the pseudo-element */
+  margin-top: 0px;
   margin-bottom: 40px; /* Space below the line */
   padding-bottom: 40px; /* Space above the line */
 }
@@ -371,41 +365,81 @@ button:hover {
   font-size: 1.1rem;
   margin-bottom: 10px;
 }
+
 /* Skills Section */
 .skills {
   padding: 80px 0;
 }
 
-.skills-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+.skills-container {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: nowrap;
+}
+
+.skills-category {
+  width: 30%;
+}
+
+.skills-category h3 {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 15px;
   text-align: center;
 }
 
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
 .skill-card {
-  padding: 40px;
+  display: flex;
+  align-items: center;
+  padding: 12px;
   background-color: var(--bg-primary);
-  border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform var(--transition-speed);
+  border-radius: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
 }
 
 .skill-card:hover {
-  transform: translateY(-10px);
+  transform: translateY(-3px);
 }
 
-.skill-card ion-icon {
-  font-size: 3rem;
-  color: var(--primary-color);
-  margin-bottom: 15px;
+.skill-card img {
+  width: 35px;
+  height: 35px;
 }
 
 .skill-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-weight: 600;
   color: var(--text-primary);
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 10px;
 }
+
+.skill-level {
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+  font-style: italic;
+  text-align: right;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .skills-container {
+    flex-wrap: wrap;
+  }
+  .skills-category {
+    width: 100%;
+  }
+}
+
 
 /* Projects Section */
 .projects {

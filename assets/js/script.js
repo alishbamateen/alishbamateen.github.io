@@ -46,3 +46,12 @@ const observer = new IntersectionObserver((entries) => {
 fadeElements.forEach(element => {
   observer.observe(element);
 });
+
+function scrollSkills(direction) {
+  const skillsGrid = document.querySelector('.skills-grid');
+  const scrollAmount = skillsGrid.clientWidth; // Scroll by the width of the visible area
+  skillsGrid.scrollBy({
+    left: direction * scrollAmount,
+    behavior: 'smooth'
+  });
+}
