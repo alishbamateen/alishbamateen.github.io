@@ -85,7 +85,7 @@
           <div class="about-content">
             <h2 class="section-title">About Me</h2>
             <p class="section-text">
-              Hi! My name is Alishba Mateen and I’m a second-year student at the University of Toronto, studying Computer Science and Statistics. With a strong foundation in programming, data analysis, and machine learning, I thrive on solving complex problems and developing innovative, data-driven solutions.
+              Hi! My name is Alishba Mateen and I’m a third-year student at the University of Toronto, studying Computer Science, Statistics, & Business. With a strong foundation in programming, data analysis, and machine learning, I thrive on solving complex problems and developing innovative, data-driven solutions.
             </p>
             <ul class="about-list">
               <li><strong>Location:</strong> Toronto, ON</li>
@@ -215,29 +215,33 @@
   </section>
 </div>
 
-    <!-- Projects Section -->
-    <div class="section-divider">
-      <section class="projects" id="projects">
-        <div class="container">
-          <h2 class="section-title">Projects</h2>
-          <div class="projects-grid">
-            <div class="project-card">
-              <h3>Paint Program</h3>
-              <p>Developed a Java-based Paint Program with AI-powered features using Ollama for artistic suggestions.</p>
-            </div>
-            <div class="project-card">
-              <h3>Ride-Sharing Service</h3>
-              <p>Engineered a Python-based simulation modeling ride-sharing scenarios, optimizing rider and driver interactions.</p>
-            </div>
-            <div class="project-card">
-              <h3>Nutrovision</h3>
-              <p>Built an AI-powered recipe app with TensorFlow and Keras, winning the Best Health & Wellness Hack award at hackHer 2024.</p>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>
+<!-- Projects Section -->
+<div class="section-divider">
+  <section class="projects" id="projects">
+    <div class="container">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
 
+        <!-- Nutrovision Project -->
+        <a href="https://devpost.com/software/nutrovision" target="_blank" rel="noopener noreferrer" class="project-card-link">
+          <div class="project-card">
+            <h3>Nutrovision</h3>
+            <p>Built an AI-powered recipe app with TensorFlow and Keras, winning the Best Health & Wellness Hack award at hackHer 2024.</p>
+          </div>
+        </a>
+
+        <!-- Predicting Home Prices Project -->
+        <a href="https://github.com/alishbamateen/PredictHomePrices" target="_blank" rel="noopener noreferrer" class="project-card-link">
+          <div class="project-card">
+            <h3>Predicting Home Prices</h3>
+            <p>Developed a Python-based linear regression model using scikit-learn to predict house prices from square footage. Visualized results with Matplotlib and explored data with Pandas and NumPy.</p>
+          </div>
+        </a>
+
+      </div>
+    </div>
+  </section>
+</div>
     <!-- Contact Section -->
     <section class="contact" id="contact">
       <div class="container">
@@ -252,7 +256,7 @@
           <div class="form-group">
             <textarea name="message" placeholder="Your Message" required></textarea>
           </div>
-          <button type="submit" class="btn btn-primary">Send Message</button>
+          <button type="submit" onclick = "sendMail()" class="btn btn-primary">Send Message</button>
         </form>
       </div>
     </section>
@@ -271,6 +275,18 @@
 
   <!-- Scripts -->
   <script src="./assets/js/script.js"></script>
+  <!-- <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+  </script>
+  <script type="text/javascript">
+  (function(){
+      emailjs.init({
+          publicKey: "vVdwDRxi0-5N-g-ZJ",
+      });
+  })();
+  </script>
+  <script src = "email.js"></script> -->
+
 </body>
 
 </html>
