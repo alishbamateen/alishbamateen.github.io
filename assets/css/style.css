@@ -450,7 +450,7 @@ section[id] {
 }
 
 .project-card {
-  height: 80%; /* ensures consistent box height */
+  height: 100%; /* ensures consistent box height */
 }
 
 .project-card-link:hover .project-card {
