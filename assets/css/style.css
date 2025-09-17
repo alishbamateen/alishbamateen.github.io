@@ -438,9 +438,12 @@ section[id] {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
-    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    column-gap: 30px; /* horizontal spacing */
+    row-gap: 90px;    /* vertical spacing */
     margin-top: 50px;
+    justify-content: center; /* center last row items */
+    grid-auto-rows: 1fr;   /* make all cards same height per row */
 }
 
 .project-card-link {
@@ -450,7 +453,9 @@ section[id] {
 }
 
 .project-card {
-  height: 100%; /* ensures consistent box height */
+    display: flex;
+    flex-direction: column; /* keeps content stacked vertically */
+    height: 100%;           /* fill available grid row height */
 }
 
 .project-card-link:hover .project-card {
