@@ -489,6 +489,169 @@ section[id] {
     color: var(--text-secondary);
 }
 
+/*-----------------------------------*\
+ * #LEADERSHIP SECTION
+\*-----------------------------------*/
+
+.leadership {
+    padding: 70px 0;
+    background-color: var(--bg-primary); /* Alternate background from Projects */
+    transition: background-color var(--transition-speed);
+}
+
+.leadership-grid {
+    display: grid;
+    /* 3-column layout, similar to projects/skills */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+    justify-content: center;
+}
+
+.leadership-card {
+    background-color: var(--bg-secondary); /* Slightly lighter card background */
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%; /* Ensure uniform height in the grid */
+    display: flex;
+    flex-direction: column;
+}
+
+.leadership-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+.card-icon-container {
+    width: 150px;
+    height: 150px;
+    /* Use gradient border for a cool effect */
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Creating a cool gradient ring border */
+.card-icon-container::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(45deg, var(--primary-color), var(--secondary-color), var(--accent-color));
+    padding: 4px; /* Thickness of the ring */
+    border-radius: 50%;
+    -webkit-mask: 
+        linear-gradient(#fff 0 0) content-box, 
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.card-icon-container ion-icon {
+    font-size: 35px;
+    color: var(--text-color); /* White icon */
+    background-color: var(--bg-secondary); /* Match card background */
+    padding: 10px; /* Space inside the ring */
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.leadership-card h3 {
+    font-family: var(--font-primary);
+    font-size: 1.35rem;
+    font-weight: 500;
+    color: var(--text-color); /* Highlight club title */
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.club-info {
+    /* Existing styles... */
+    font-size: 1.19rem;
+    color: var(--text-color);
+    margin-bottom: 5px; 
+    text-align: center;
+    position: relative; /* Essential for positioning the ::after divider */
+    padding-bottom: 50px; /* Adds vertical space between description and divider */
+}
+
+/* New CSS to create the divider line */
+.club-info::after {
+    content: '';
+    display: block;
+    width: 100%; /* Adjust this percentage to control the width of the line */
+    height: 2px; /* Line thickness */
+    background-color: var(--text-secondary); /* Color matches the gray text */
+    position: absolute;
+    bottom: 0;
+    left: 0; /* Align the line to the left */
+}
+
+/* Styling for custom club logo images (Ensure this is in your CSS) */
+.club-logo-img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Styles for the Leadership List for cleaner look and spacing */
+.leadership-list {
+    list-style: none;         /* Remove default bullet points */
+    padding-left: 0;          /* Ensure full left alignment */
+    margin-top: 50px;         /* More space after the introductory paragraph */
+    text-align: left;         /* Explicitly align list to the left */
+}
+
+.leadership-list li {
+    font-size: 1.1rem;
+    color: var(--text-secondary);
+    margin-bottom: 18px; /* INCREASED from 12px to 18px for more space */
+    position: relative;
+    padding-left: 20px;
+    line-height: 1.4;
+}
+
+/* Styling the custom bullet point */
+.leadership-list li::before {
+    content: '•';             /* Using a simple, clean bullet point */
+    color: var(--text-color); /* Using your vibrant Turquoise color for the bullet */
+    font-size: 1.2rem;
+    font-weight: bold;
+    position: absolute;
+    left: 0;                  /* Ensure the bullet is at the far left edge */
+    top: 0;
+}
+
+/* Ensure the initial bolded sentence is separated from the list */
+.club-info strong {
+    display: block;
+    margin-bottom: 5px; 
+    font-weight: 600;
+    color: var(--text-color); /* Keeping the intro sentence bright white */
+}
+
+/* Media Query Adjustment for Leadership on smaller screens */
+@media (max-width: 768px) {
+    .leadership-grid {
+        grid-template-columns: 1fr; /* Stack leadership cards on smaller screens */
+    }
+}
+/* Styling for custom club logo images */
+.club-logo-img {
+    max-width: 95%; /* Ensure the image fits inside the container */
+    max-height: 95%;
+    /* Remove any white/dark background from image if possible, 
+       otherwise adjust background of .card-icon-container if needed */
+      
+}
+
+
+
 /* Contact Section */
 .contact {
     padding: 50px 0;
