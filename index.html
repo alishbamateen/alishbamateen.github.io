@@ -1,377 +1,429 @@
 <!DOCTYPE html>
+
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Alishba Mateen - Portfolio</title>
+<meta charset="utf-8"/>
+<meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Alishba Mateen - Portfolio</title>
+<link href="./favicon.svg" rel="shortcut icon" type="image/svg+xml"/>
+<link href="./assets/css/style.css" rel="stylesheet"/>
+<style>
+  .leadership-date {
+    margin-top: 18px;
+    padding-top: 14px;
+    border-top: 1px solid #3a3a3a;
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+  }
+</style>
 
-  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
-
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap"
-    rel="stylesheet">
-
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&amp;family=Roboto:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+<script nomodule="" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </head>
-
-<body id="top" class="dark_theme">
-
-  <header class="header" data-header>
-    <div class="container">
-      <h1 class="logo">
-        <a href="#home">
-          <span class="white-text">alishba mateen</span>
-        </a>
-      </h1>
-
-      <nav class="navbar" data-navbar>
-        <ul class="navbar-list">
-          <li><a href="#home" class="navbar-link">Home</a></li>
-          <li><a href="#about" class="navbar-link">About</a></li>
-          <li><a href="#skills" class="navbar-link">Skills</a></li>
-          <li><a href="#projects" class="navbar-link">Projects</a></li>
-          <li><a href="#leadership" class="navbar-link">Leadership</a></li>
-          <li><a href="#contact" class="navbar-link">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-  <div class="section-divider">
-    <section class="hero" id="home">
-      <div class="container">
-        <div class="hero-text">
-          <h1 class="hero-title">Alishba Mateen</h1>
-          <p class="hero-subtitle">Computer Science + Statistics @ UofT</p>
-        </div>
-
-        <a href="resume.pdf" class="btn btn-primary" target="_blank">Check Out My Resume</a>
-      </div>
-    </section>
-  </div>
-
-
-    <div class="section-divider">
-      <section class="about" id="about">
-        <div class="container">
-          <div class="about-me">
-            <img src="./assets/images/prof_pic.JPG" alt="Alishba Mateen" class="w-100">
-          </div>
-
-          <div class="about-content">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-text">
-              Hi! My name is Alishba Mateen and I’m a third-year student at the University of Toronto, studying Computer Science, Statistics, & Business. With a strong foundation in programming, data analysis, and machine learning, I thrive on solving complex problems and developing innovative, data-driven solutions.
+<body class="dark_theme" id="top">
+<header class="header" data-header="">
+<div class="container">
+<h1 class="logo">
+<a href="#home">
+<span class="white-text">alishba mateen</span>
+</a>
+</h1>
+<nav class="navbar" data-navbar="">
+<ul class="navbar-list">
+<li><a class="navbar-link" href="#home">Home</a></li>
+<li><a class="navbar-link" href="#about">About</a></li>
+<li><a class="navbar-link" href="#experience">Experience</a></li>
+<li><a class="navbar-link" href="#skills">Skills</a></li>
+<li><a class="navbar-link" href="#projects">Projects</a></li>
+<li><a class="navbar-link" href="#leadership">Leadership</a></li>
+<li><a class="navbar-link" href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+<main>
+<div class="section-divider">
+<section class="hero" id="home">
+<div class="container">
+<div class="hero-text">
+<h1 class="hero-title">Alishba Mateen</h1>
+<p class="hero-subtitle">Computer Science, Statistics, &amp; Business @ UofT</p>
+</div>
+<a class="btn btn-primary" href="resume.pdf" target="_blank">Check Out My Resume!</a>
+</div>
+</section>
+</div>
+<div class="section-divider">
+<section class="about" id="about">
+<div class="container">
+<div class="about-me">
+<img alt="Alishba Mateen" class="w-100" src="./assets/images/prof_pic.JPG"/>
+</div>
+<div class="about-content">
+<h2 class="section-title">About Me</h2>
+<p class="section-text">
+              Hi! My name is Alishba, and I’m a third-year student at the University of Toronto studying Computer Science, Statistics, and Business. I’m especially interested in data analysis and data visualization, and I enjoy turning complex data into clear insights, dashboards, and useful recommendations.
             </p>
-            <ul class="about-list">
-              <li><strong>Location:</strong> Toronto, ON</li>
-              <li><strong>Email:</strong> alishba.mateen@gmail.com</li>
-              <li><strong>Phone:</strong> 647-456-8423</li>
-            </ul>
-          </div>
-        </div>
-      </section>
-    </div>
-
+<p class="section-text">
+              I also have experience with programming and machine learning, and I like using those skills to solve problems and better understand data. I enjoy working with others, sharing ideas, and contributing to projects that have a practical impact.
+            </p>
+<ul class="about-list">
+<li><strong>Location:</strong> Toronto, ON</li>
+<li><strong>Email:</strong> alishba.mateen@gmail.com</li>
+<li><strong>Phone:</strong> 647-456-8423</li>
+</ul>
+</div>
+</div>
+</section>
+</div>
 <div class="section-divider">
-  <section class="skills" id="skills">
-    <div class="container">
-      <h2 class="section-title">Technical Skills</h2>
-      
-      <div class="skills-container">
-        <div class="skills-category">
-          <h3>Programming Languages & Tools</h3>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <img src="./assets/images/python.png" alt="Python">
-              <h3>Python</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/java.png" alt="Java">
-              <h3>Java</h3>
-              <p class="skill-level">Intermediate</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/c.png" alt="C">
-              <h3>C</h3>
-              <p class="skill-level">Beginner</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/sql.png" alt="SQL">
-              <h3>SQL</h3>
-              <p class="skill-level">Intermediate</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/github.png" alt="Github">
-              <h3>Github</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/tensorflow.png" alt="Tensorflow">
-              <h3>Tensorflow</h3>
-              <p class="skill-level">Intermediate</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/figma.png" alt="Figma">
-              <h3>Figma</h3>
-              <p class="skill-level">Beginner</p>
-            </div>
-          </div>
-        </div>
-        
-        <div class="skills-category">
-          <h3>Software Development – Web & App</h3>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <img src="./assets/images/html.png" alt="HTML5">
-              <h3>HTML5</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/css.png" alt="CSS3">
-              <h3>CSS</h3>
-              <p class="skill-level">Advancced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/javascript.png" alt="JavaScript">
-              <h3>JavaScript</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/reactjs.png" alt="React.js">
-              <h3>React.js</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/nodejs.png" alt="Node.js">
-              <h3>Node.js</h3>
-              <p class="skill-level">Beginner</p>
-            </div>
-          </div>
-        </div>
-
-        <div class="skills-category">
-          <h3>Data Analytics</h3>
-          <div class="skills-grid">
-            <div class="skill-card">
-              <img src="./assets/images/excel.png" alt="MS-Excel">
-              <h3>MS-Excel</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-              <div class="skill-card">
-              <img src="./assets/images/tableau.png" alt="Tableau">
-              <h3>Tableau</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/powerbi.png" alt="PowerBI">
-              <h3>PowerBI</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/pandas.png" alt="Pandas">
-              <h3>Pandas</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/numpy.png" alt="NumPy">
-              <h3>NumPy</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/matplotlib.png" alt="matplotlib">
-              <h3>matplotlib</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-            <div class="skill-card">
-              <img src="./assets/images/seaborn.png" alt="seaborn">
-              <h3>seaborn</h3>
-              <p class="skill-level">Advanced</p>
-            </div>
-
-
-            <div class="skill-card">
-              <img src="./assets/images/mysql.png" alt="MySQL">
-              <h3>MySQL</h3>
-              <p class="skill-level">Intermediate</p>
-            </div>
-
-            
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
+<section class="experience" id="experience">
+<div class="container">
+<h2 class="section-title">Professional Experience</h2>
+<div class="experience-timeline">
+<article class="timeline-item">
+<div class="timeline-date">
+<span>Apr 2026</span>
+<span class="date-line">—</span>
+<span>Dec 2026</span>
+</div>
+<div aria-hidden="true" class="timeline-marker">
+<span class="timeline-dot"></span>
+</div>
+<div class="experience-card">
+<div class="experience-heading">
+<div class="experience-title-group">
+<p class="experience-company">Schneider Electric - Milton, ON</p>
+<h3>Commercial &amp; Data Specialist Intern</h3>
+<p class="experience-team">Industrial Automation Business</p>
+</div>
+<div class="experience-side">
+<div class="company-logo-container">
+<img alt="Schneider Electric logo" src="./assets/images/schneider-electric-logo.png"/>
+</div>
+</div>
+</div>
+<ul class="experience-list">
+<li>Develop and maintain Tableau dashboards that turn commercial data into clear views of sales performance, product activity, campaign results, and key business indicators.</li>
+<li>Extract, clean, validate, and analyze data from internal systems to identify trends and translate findings into practical business recommendations.</li>
+<li>Support product launches, promotions, and go-to-market campaigns by coordinating deliverables across sales, marketing, product, and offer management teams.</li>
+<li>Upload, organize, and maintain product and campaign content across digital content management and e-commerce platforms.</li>
+<li>Assist with customer and distributor events, including product launches, training sessions, trade shows, and roadshows.</li>
+</ul>
+<div aria-label="Tools and focus areas" class="experience-tools">
+<span>Tableau</span>
+<span>Excel</span>
+<span>Data Analysis</span>
+<span>Commercial Analytics</span>
+<span>Campaign Execution</span>
+</div>
+</div>
+</article>
+</div>
+</div>
+</section>
+</div>
+<div class="section-divider">
+<section class="skills" id="skills">
+<div class="container">
+<h2 class="section-title">Technical Skills</h2>
+<div class="skills-container"><div class="skills-category">
+<h3>Data Analytics & Visualization</h3>
+<div class="skills-grid">
+<div class="skill-card">
+<img alt="Microsoft Excel" src="./assets/images/excel.png"/>
+<h3>Microsoft Excel</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Tableau" src="./assets/images/tableau.png"/>
+<h3>Tableau</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Power BI" src="./assets/images/powerbi.png"/>
+<h3>Power BI</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="SQL" src="./assets/images/sql.png"/>
+<h3>SQL</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="MySQL" src="./assets/images/mysql.png"/>
+<h3>MySQL</h3>
+<p class="skill-level">Intermediate</p>
+</div>
+<div class="skill-card">
+<img alt="Pandas" src="./assets/images/pandas.png"/>
+<h3>Pandas</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="NumPy" src="./assets/images/numpy.png"/>
+<h3>NumPy</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Matplotlib" src="./assets/images/matplotlib.png"/>
+<h3>Matplotlib</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Seaborn" src="./assets/images/seaborn.png"/>
+<h3>Seaborn</h3>
+<p class="skill-level">Advanced</p>
+</div>
+</div>
+</div><div class="skills-category">
+<h3>Marketing &amp; Commercial Tools</h3>
+<div class="skills-grid">
+<div class="skill-card">
+<img alt="Salesforce Marketing Cloud" src="./assets/images/salesforce-marketing-cloud.png"/>
+<h3>Salesforce Marketing Cloud</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Microsoft SharePoint" src="./assets/images/sharepoint.png"/>
+<h3>Microsoft SharePoint</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Microsoft PowerPoint" src="./assets/images/powerpoint.png"/>
+<h3>Microsoft PowerPoint</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Microsoft Word" src="./assets/images/word.png"/>
+<h3>Microsoft Word</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Coupa" src="./assets/images/coupa.png"/>
+<h3>Coupa</h3>
+<p class="skill-level">Intermediate</p>
 </div>
 
-<div class="section-divider">
-  <section class="projects" id="projects">
-    <div class="container">
-      <h2 class="section-title">Projects</h2>
-      <div class="projects-grid">
-
-
-        <a href="https://github.com/alishbamateen/td-geospatial-analytics" target="_blank" rel="noopener noreferrer" class="project-card-link">
-          <div class="project-card">
-            <h3>Banking Analytics: Geospatial Customer Demand & Branch Performance</h3>
-            <p>Built an end-to-end geospatial analytics solution using Python, SQL, and Tableau to identify underserved banking regions and forecast customer demand. Analyzed 150 branches across Canada, identifying $2.5M in monthly transaction gaps and recommending data-driven expansion strategies.</p>
-          </div>
-        </a>
-
-        <a href="https://github.com/alishbamateen/Northwind-Retail-Analysis" target="_blank" rel="noopener noreferrer" class="project-card-link">
-          <div class="project-card">
-            <h3>Retail Sales & Inventory Analysis - Northwind Traders</h3>
-            <p>Analyzed 11+ years of sales and inventory data using advanced SQL to uncover seasonal trends, identify high-value products, and detect critical stockouts. Delivered actionable insights for inventory optimization, revenue protection, and operational efficiency, showcasing skills in data analysis, business intelligence, and strategic reporting.</p>
-          </div>
-        </a>
-        
-        
-        <a href="https://github.com/alishbamateen/Toronto-Bike-Share-Ridership-Analysis-" target="_blank" rel="noopener noreferrer" class="project-card-link">
-          <div class="project-card">
-            <h3>Toronto Bike Share Ridership Analysis</h3>
-            <p>Analyzed Toronto Bike Share data to uncover daily and hourly usage trends, popular stations, and weekday vs weekend patterns using Python (pandas, numpy, matplotlib, seaborn, scipy). Generated insights presented in a comprehensive report.</p>
-          </div>
-        </a>
-
-        <a href="https://github.com/alishbamateen/PredictHomePrices" target="_blank" rel="noopener noreferrer" class="project-card-link">
-          <div class="project-card">
-            <h3>Predicting Home Prices</h3>
-            <p>Developed a Python-based linear regression model using scikit-learn to predict house prices from square footage. Visualized results with Matplotlib and explored data with Pandas and NumPy.</p>
-          </div>
-        </a>
-
-
-        <a href="https://github.com/alishbamateen/Student-Performance-Analysis" target="_blank" rel="noopener noreferrer" class="project-card-link">
-          <div class="project-card">
-            <h3>Student Performance Analysis</h3>
-            <p>Cleaned and analyzed student survey data to explore how attendance, homework, and teacher–parent communication relate to exam scores. Created interactive dashboards in Tableau and Power BI, and summarized trends with Excel PivotTables, gaining hands-on experience in data cleaning, analysis, and visualization across multiple platforms.</p>
-          </div>
-        </a>
-
-        <a href="https://devpost.com/software/nutrovision" target="_blank" rel="noopener noreferrer" class="project-card-link">
-          <div class="project-card">
-            <h3>Nutrovision</h3>
-            <p>Worked in a team to develop NutroVision, an AI-powered recipe and nutrition app that identifies fruits and vegetables from images, suggests personalized recipes, and provides detailed calorie and nutritional visualizations. The project won the Best Health & Wellness Hack award at hackHer 2024.</p>
-          </div>
-        </a>
-
-        
-
-      </div>
-    </div>
-  </section>
+<div class="skill-card">
+<img alt="E-commerce Platforms" src="./assets/images/ecommerce.png"/>
+<h3>E-commerce Platforms</h3>
+<p class="skill-level">Advanced</p>
 </div>
-
+</div>
+</div><div class="skills-category">
+<h3>Programming Languages &amp; Tools</h3>
+<div class="skills-grid">
+<div class="skill-card">
+<img alt="Python" src="./assets/images/python.png"/>
+<h3>Python</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="Java" src="./assets/images/java.png"/>
+<h3>Java</h3>
+<p class="skill-level">Intermediate</p>
+</div>
+<div class="skill-card">
+<img alt="C" src="./assets/images/c.png"/>
+<h3>C</h3>
+<p class="skill-level">Beginner</p>
+</div>
+<div class="skill-card">
+<img alt="GitHub" src="./assets/images/github.png"/>
+<h3>GitHub</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="TensorFlow" src="./assets/images/tensorflow.png"/>
+<h3>TensorFlow</h3>
+<p class="skill-level">Intermediate</p>
+</div>
+<div class="skill-card">
+<img alt="Figma" src="./assets/images/figma.png"/>
+<h3>Figma</h3>
+<p class="skill-level">Beginner</p>
+</div>
+</div>
+</div><div class="skills-category">
+<h3>Software Development – Web &amp; App</h3>
+<div class="skills-grid">
+<div class="skill-card">
+<img alt="HTML5" src="./assets/images/html.png"/>
+<h3>HTML5</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="CSS3" src="./assets/images/css.png"/>
+<h3>CSS</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="JavaScript" src="./assets/images/javascript.png"/>
+<h3>JavaScript</h3>
+<p class="skill-level">Advanced</p>
+</div>
+<div class="skill-card">
+<img alt="React.js" src="./assets/images/reactjs.png"/>
+<h3>React.js</h3>
+<p class="skill-level">Intermediate</p>
+</div>
+<div class="skill-card">
+<img alt="Node.js" src="./assets/images/nodejs.png"/>
+<h3>Node.js</h3>
+<p class="skill-level">Beginner</p>
+</div>
+</div>
+</div></div>
+</div>
+</section>
+</div>
 <div class="section-divider">
-  <section class="leadership" id="leadership">
-    <div class="container">
-      <h2 class="section-title">Leadership Experience</h2>
-      <div class="leadership-grid">
-
-        <div class="leadership-card">
-          <div class="card-icon-container">
-            <img src="./assets/images/tcf_logo.jpeg" alt="TCF UTM Logo" class="club-logo-img">
-          </div>
-          <h3>VP Finance - TCF UTM<br>(The Citizens Foundation UTM)</h3>
-          <p class="club-info">
+<section class="projects" id="projects">
+<div class="container">
+<h2 class="section-title">Projects</h2>
+<div class="projects-grid">
+<a class="project-card-link" href="https://github.com/alishbamateen/td-geospatial-analytics" rel="noopener noreferrer" target="_blank">
+<div class="project-card">
+<h3>Banking Analytics: Geospatial Customer Demand &amp; Branch Performance</h3>
+<p>Built an end-to-end geospatial analytics solution using Python, SQL, and Tableau to identify underserved banking regions and forecast customer demand. Analyzed 150 branches across Canada, identifying $2.5M in monthly transaction gaps and recommending data-driven expansion strategies.</p>
+</div>
+</a>
+<a class="project-card-link" href="https://github.com/alishbamateen/Northwind-Retail-Analysis" rel="noopener noreferrer" target="_blank">
+<div class="project-card">
+<h3>Retail Sales &amp; Inventory Analysis - Northwind Traders</h3>
+<p>Analyzed 11+ years of sales and inventory data using advanced SQL to uncover seasonal trends, identify high-value products, and detect critical stockouts. Delivered actionable insights for inventory optimization, revenue protection, and operational efficiency, showcasing skills in data analysis, business intelligence, and strategic reporting.</p>
+</div>
+</a>
+<a class="project-card-link" href="https://github.com/alishbamateen/Toronto-Bike-Share-Ridership-Analysis-" rel="noopener noreferrer" target="_blank">
+<div class="project-card">
+<h3>Toronto Bike Share Ridership Analysis</h3>
+<p>Analyzed Toronto Bike Share data to uncover daily and hourly usage trends, popular stations, and weekday vs weekend patterns using Python (pandas, numpy, matplotlib, seaborn, scipy). Generated insights presented in a comprehensive report.</p>
+</div>
+</a>
+<a class="project-card-link" href="https://github.com/alishbamateen/PredictHomePrices" rel="noopener noreferrer" target="_blank">
+<div class="project-card">
+<h3>Predicting Home Prices</h3>
+<p>Developed a Python-based linear regression model using scikit-learn to predict house prices from square footage. Visualized results with Matplotlib and explored data with Pandas and NumPy.</p>
+</div>
+</a>
+<a class="project-card-link" href="https://github.com/alishbamateen/Student-Performance-Analysis" rel="noopener noreferrer" target="_blank">
+<div class="project-card">
+<h3>Student Performance Analysis</h3>
+<p>Cleaned and analyzed student survey data to explore how attendance, homework, and teacher–parent communication relate to exam scores. Created interactive dashboards in Tableau and Power BI, and summarized trends with Excel PivotTables, gaining hands-on experience in data cleaning, analysis, and visualization across multiple platforms.</p>
+</div>
+</a>
+<a class="project-card-link" href="https://devpost.com/software/nutrovision" rel="noopener noreferrer" target="_blank">
+<div class="project-card">
+<h3>Nutrovision</h3>
+<p>Worked in a team to develop NutroVision, an AI-powered recipe and nutrition app that identifies fruits and vegetables from images, suggests personalized recipes, and provides detailed calorie and nutritional visualizations. The project won the Best Health &amp; Wellness Hack award at hackHer 2024.</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+</div>
+<div class="section-divider">
+<section class="leadership" id="leadership">
+<div class="container">
+<h2 class="section-title">Leadership Experience</h2>
+<div class="leadership-grid">
+<div class="leadership-card">
+<div class="card-icon-container">
+<img alt="TCF UTM Logo" class="club-logo-img" src="./assets/images/tcf_logo.jpeg"/>
+</div>
+<h3>VP Finance - TCF UTM<br/>(The Citizens Foundation UTM)</h3>
+<p class="club-info">
             TCF is a CRA-registered charity dedicated to expanding educational opportunities for underprivileged children in Pakistan.
             <ul class="leadership-list">
-              <li>Oversee all budgeting, forecasting, and expense tracking for events + fundraisers</li>
-              <li>Allocate resources efficiently across multiple initiatives</li>
-              <li>Maintain clear, audit-ready financial records</li>
-              <li>Support planning of large fundraising events that directly contribute to education access</li>
-            </ul>
-          </p>
-        </div>
-
-        <div class="leadership-card">
-          <div class="card-icon-container">
-            <img src="./assets/images/utmsam.png" alt="UTMSAM Logo" class="club-logo-img">
-          </div>
-          <h3>Co-VP Finance - UTMSAM (UTM Society for Algorithmic Modeling)</h3>
-          <p class="club-info">
+<li>Oversee all budgeting, forecasting, and expense tracking for events + fundraisers</li>
+<li>Allocate resources efficiently across multiple initiatives</li>
+<li>Maintain clear, audit-ready financial records</li>
+<li>Support planning of large fundraising events that directly contribute to education access</li>
+</ul>
+</p>
+<p class="leadership-date">May 2024 – Present</p>
+</div>
+<div class="leadership-card">
+<div class="card-icon-container">
+<img alt="UTMSAM Logo" class="club-logo-img" src="./assets/images/utmsam.png"/>
+</div>
+<h3>Co-VP Finance - UTMSAM (UTM Society for Algorithmic Modeling)</h3>
+<p class="club-info">
             UTMSAM is a tech-driven club that brings together computer science, math, and statistics students to innovate using cutting-edge tools.
             <ul class="leadership-list">
-              <li>Manage budgets for workshops, hackathons, speaker sessions, competitions</li>
-              <li>Handle sponsorship coordination and financial logistics</li>
-              <li>Ensure events have the resources + equipment needed to run smoothly</li>
-              <li>Help UTMSAM deliver high-quality, technical programming on campus</li>
-            </ul>
-          </p>
-        </div>
-
-        <div class="leadership-card">
-          <div class="card-icon-container">
-            <img src="./assets/images/gdg.jpg" alt="GDG Logo" class="club-logo-img">
-          </div>
-          <h3>Finance Lead - GDG UTM (Google Developers Group UTM)</h3>
-          <p class="club-info">
+<li>Manage budgets for workshops, hackathons, speaker sessions, competitions</li>
+<li>Handle sponsorship coordination and financial logistics</li>
+<li>Ensure events have the resources + equipment needed to run smoothly</li>
+<li>Help UTMSAM deliver high-quality, technical programming on campus</li>
+</ul>
+</p>
+<p class="leadership-date">Aug 2025 – Apr 2026</p>
+</div>
+<div class="leadership-card">
+<div class="card-icon-container">
+<img alt="GDG Logo" class="club-logo-img" src="./assets/images/gdg.jpg"/>
+</div>
+<h3>Finance Lead - GDG UTM (Google Developers Group UTM)</h3>
+<p class="club-info">
             GDG UTM is a Google-supported student chapter empowering students to grow their technical skills and build real-world solutions.
             <ul class="leadership-list">
-              <li>Oversee funding for Google-backed workshops, meetups, and training sessions</li>
-              <li>Manage reimbursements, track expenses, and coordinate with exec team</li>
-              <li>Work with sponsors and partners to secure event resources</li>
-              <li>Enable consistent, well-funded technical events that support UTM’s developer community</li>
-            </ul>
-          </p>
-        </div>
-
-      </div>
-    </div>
-  </section>
+<li>Oversee funding for Google-backed workshops, meetups, and training sessions</li>
+<li>Manage reimbursements, track expenses, and coordinate with exec team</li>
+<li>Work with sponsors and partners to secure event resources</li>
+<li>Enable consistent, well-funded technical events that support UTM’s developer community</li>
+</ul>
+</p>
+<p class="leadership-date">Sep 2025 – Apr 2026</p>
 </div>
-
-    <section class="contact" id="contact">
-      <div class="container">
-        <h2 class="section-title">Contact Me</h2>
-        <form action="" class="contact-form">
-          <div class="form-group">
-            <input type="text" name="name" placeholder="Your Name" required>
-          </div>
-          <div class="form-group">
-            <input type="email" name="email" placeholder="Your Email" required>
-          </div>
-          <div class="form-group">
-            <textarea name="message" placeholder="Your Message" required></textarea>
-          </div>
-          <button type="submit" onclick = "sendMail()" class="btn btn-primary">Send Message</button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <p class="copyright">&copy; 2025 Alishba Mateen</p>
-      <ul class="social-links">
-        <li><a href="https://www.linkedin.com/in/alishba-mateen-3174b721b/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
-        <li><a href="https://github.com/alishbamateen" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
-      </ul>
-    </div>
-  </footer>
-
-  <script src="./assets/js/script.js"></script>
-  <script type="text/javascript"
-            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
-  </script>
-  <script type="text/javascript">
+</div>
+</div>
+</section>
+</div>
+<section class="contact" id="contact">
+<div class="container">
+<h2 class="section-title">Contact Me</h2>
+<form action="" class="contact-form">
+<div class="form-group">
+<input name="name" placeholder="Your Name" required="" type="text"/>
+</div>
+<div class="form-group">
+<input name="email" placeholder="Your Email" required="" type="email"/>
+</div>
+<div class="form-group">
+<textarea name="message" placeholder="Your Message" required=""></textarea>
+</div>
+<button class="btn btn-primary" onclick="sendMail()" type="submit">Send Message</button>
+</form>
+</div>
+</section>
+</main>
+<footer class="footer">
+<div class="container">
+<p class="copyright">© 2025 Alishba Mateen</p>
+<ul class="social-links">
+<li><a href="https://www.linkedin.com/in/alishba-mateen-3174b721b/" target="_blank"><ion-icon name="logo-linkedin"></ion-icon></a></li>
+<li><a href="https://github.com/alishbamateen" target="_blank"><ion-icon name="logo-github"></ion-icon></a></li>
+</ul>
+</div>
+</footer>
+<script src="./assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" type="text/javascript">
+</script>
+<script type="text/javascript">
   (function(){
       emailjs.init({
           publicKey: "vVdwDRxi0-5N-g-ZJ",
       });
   })();
   </script>
-  <script src = "email.js"></script>
-
+<script src="email.js"></script>
 </body>
-
 </html>

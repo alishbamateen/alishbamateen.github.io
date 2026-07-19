@@ -353,6 +353,166 @@ section[id] {
     margin-bottom: 10px;
 }
 
+
+/* Experience Section */
+.experience {
+    padding: 70px 0;
+    background-color: var(--bg-primary);
+    transition: background-color var(--transition-speed);
+}
+.experience-timeline { margin-top: 50px; }
+.timeline-item {
+    display: grid;
+    grid-template-columns: 150px 36px minmax(0, 1fr);
+    align-items: stretch;
+}
+.timeline-date {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 28px 24px 0 0;
+    color: var(--secondary-color);
+    font-family: var(--font-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.35;
+}
+.timeline-date .date-line { color: var(--text-secondary); }
+.timeline-marker {
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.timeline-marker::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    border-radius: 3px;
+    background: linear-gradient(to bottom, var(--primary-color), var(--secondary-color));
+}
+.timeline-dot {
+    position: relative;
+    z-index: 1;
+    width: 16px;
+    height: 16px;
+    margin-top: 34px;
+    border: 4px solid var(--bg-primary);
+    border-radius: 50%;
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 0 3px var(--primary-color), 0 0 18px rgba(64, 224, 208, 0.35);
+}
+.experience-card {
+    margin-left: 24px;
+    padding: 30px;
+    background-color: var(--bg-secondary);
+    border: 1px solid rgba(64, 224, 208, 0.18);
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+    transition: transform var(--transition-speed), box-shadow var(--transition-speed), border-color var(--transition-speed);
+}
+.experience-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(64, 224, 208, 0.45);
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+}
+.experience-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #3a3a3a;
+}
+
+.experience-title-group {
+    flex: 1;
+    min-width: 0;
+}
+
+.experience-side {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-between;
+    align-self: stretch;
+    flex-shrink: 0;
+    gap: 8px;
+}
+.experience-company {
+    margin: 0 0 4px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+.experience-heading h3 {
+    margin: 0;
+    font-family: var(--font-primary);
+    font-size: 1.65rem;
+}
+.experience-team, .experience-location { color: var(--text-secondary); }
+.experience-team { margin: 4px 0 0; }
+.experience-location {
+    margin-top: 4px;
+    white-space: nowrap;
+    font-family: var(--font-secondary);
+    font-size: 0.95rem;
+}
+.experience-list {
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+}
+.experience-list li {
+    position: relative;
+    margin-bottom: 15px;
+    padding-left: 24px;
+    color: var(--text-secondary);
+    font-size: 1.05rem;
+    line-height: 1.65;
+}
+.experience-list li::before {
+    content: '▹';
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: var(--secondary-color);
+    font-size: 1.15rem;
+}
+.experience-tools {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 24px;
+}
+.experience-tools span {
+    padding: 7px 12px;
+    border: 1px solid rgba(148, 0, 211, 0.55);
+    border-radius: 999px;
+    background-color: rgba(148, 0, 211, 0.12);
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    font-size: 0.85rem;
+}
+
+.company-logo-container {
+    width: 205px;
+    height: 90px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 1px;
+}
+
+.company-logo-container img {
+    width: 90%;
+    height: 70%;
+    object-fit: contain;
+    object-position: right center;
+    display: block;
+}
+
 /* Skills Section */
 .skills {
     padding: 50px 0;
@@ -360,17 +520,25 @@ section[id] {
     transition: background-color var(--transition-speed);
 }
 
-.skills-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 30px;
+.skills .skills-container {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 55px 50px;
     margin-top: 50px;
+    align-items: start;
+}
+
+.skills .skills-category {
+    min-width: 0;
+    width: 100%;
 }
 
 .skills-category {
-    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 28px;
     background-color: var(--bg-secondary);
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -523,6 +691,24 @@ section[id] {
 .leadership-card:hover {
     transform: translateY(-5px);
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+}
+
+
+
+.leadership-list {
+    flex-grow: 1;
+}
+.leadership-date {
+    margin-top: 2px;
+    padding-top: 30px;
+    margin-bottom: 1px;
+    padding-bottom: 3px;
+    border-top: 1px solid #3a3a3a;
+    color: var(--text-color);
+    font-family: var(--font-secondary);
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
 }
 
 .card-icon-container {
@@ -782,11 +968,38 @@ section[id] {
     .about-list {
         text-align: left;
     }
-    .skills-container {
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    .skills .skills-container {
+      grid-template-columns: 1fr !important;
+      gap: 30px;
       padding: 10px;
     }
 
         
-}
 
+    .timeline-item { grid-template-columns: 1fr; }
+    .timeline-date {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 8px;
+        padding: 0 0 16px;
+    }
+    .timeline-marker { display: none; }
+    .experience-card { margin-left: 0; padding: 24px 20px; }
+    .experience-heading { flex-direction: column; gap: 14px; }
+    .experience-side {
+        width: 100%;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .experience-location { white-space: normal; }
+    .company-logo-container {
+        width: 170px;
+        height: 78px;
+        justify-content: flex-start;
+    }
+    .company-logo-container img {
+        object-position: left center;
+    }
+
+}
